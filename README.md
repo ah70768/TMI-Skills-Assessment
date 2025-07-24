@@ -74,7 +74,7 @@ This hybrid approach strikes a balance by using the PyAirbyte library to handle 
 
 ## Potential issues for duplication: 
 
-Worked examples included in accompanying excel `Q2_dbt_duplicates.xlsx`
+Worked examples included in accompanying excel `2/2_dbt_duplicates.xlsx`
 
 ### a) Duplicate rows in `clicks` Table
 - Same `clicks.id` appears multiple times as rows are duplicated.
