@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: campaigns
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+      - name: client_id
+        tests:
+          - not_null
+      - name: name
+
+  - name: clicks
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+      - name: campaign_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('campaigns')
+              field: id
+      - name: click_time
